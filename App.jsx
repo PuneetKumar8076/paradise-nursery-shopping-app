@@ -1,18 +1,19 @@
-import React, {useState} from "react";
+import React, { useState } from "react";
 import "./App.css";
 
-function App(){
+function App() {
 
-const [showProductList,setShowProductList]=useState(false);
+const [showProductList,setShowProductList] = useState(false);
 
 return(
+
 <div>
 
 {!showProductList && (
 
 <div className="landing-page">
 
-<h1>Paradise Nursery</h1>
+<h1>Welcome to Paradise Nursery</h1>
 
 <button onClick={()=>setShowProductList(true)}>
 Get Started
@@ -23,8 +24,9 @@ Get Started
 )}
 
 </div>
+
 )
 
 }
 
-export default App
+export default App;

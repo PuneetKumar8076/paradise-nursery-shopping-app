@@ -1,6 +1,6 @@
 import React from "react";
 
-function CartItem({ item, onIncrement, onDecrement, onDelete }) {
+function CartItem({item,handleIncrement,handleDecrement,handleDelete}){
 
 return(
 
@@ -10,17 +10,17 @@ return(
 
 <h3>{item.name}</h3>
 
-<p>Unit Price: ${item.price}</p>
+<p>Price: ${item.price}</p>
 
 <p>Quantity: {item.quantity}</p>
 
 <p>Total: ${item.price * item.quantity}</p>
 
-<button onClick={()=>onIncrement(item.id)}>+</button>
+<button onClick={()=>handleIncrement(item.id)}>+</button>
 
-<button onClick={()=>onDecrement(item.id)}>-</button>
+<button onClick={()=>handleDecrement(item.id)}>-</button>
 
-<button onClick={()=>onDelete(item.id)}>Delete</button>
+<button onClick={()=>handleDelete(item.id)}>Delete</button>
 
 </div>
 

@@ -4,29 +4,32 @@ import ProductList from "./components/ProductList";
 
 function App() {
 
-  const [showProductList, setShowProductList] = useState(false);
+const [showProductList, setShowProductList] = useState(false);
 
-  return (
-    <div>
+return (
 
-      {!showProductList && (
+<div>
 
-        <div className="landing-page">
+{!showProductList && (
 
-          <h1>Welcome to Paradise Nursery</h1>
+<div className="landing-page">
 
-          <button onClick={() => setShowProductList(true)}>
-            Get Started
-          </button>
+<h1>Welcome to Paradise Nursery</h1>
 
-        </div>
+<button onClick={() => setShowProductList(true)}>
+Get Started
+</button>
 
-      )}
+</div>
 
-      {showProductList && <ProductList />}
+)}
 
-    </div>
-  );
+{showProductList && <ProductList />}
+
+</div>
+
+);
+
 }
 
 export default App;

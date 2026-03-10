@@ -16,11 +16,11 @@ return(
 
 <p>Total: ${item.price * item.quantity}</p>
 
-<button onClick={() => onIncrement(item.id)}>+</button>
+<button onClick={()=>onIncrement(item.id)}>+</button>
 
-<button onClick={() => onDecrement(item.id)}>-</button>
+<button onClick={()=>onDecrement(item.id)}>-</button>
 
-<button onClick={() => onDelete(item.id)}>Delete</button>
+<button onClick={()=>onDelete(item.id)}>Delete</button>
 
 </div>
 
